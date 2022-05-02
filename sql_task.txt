@@ -1,0 +1,6 @@
+Załóżmy, że spreadsheet to baza danych SQL. Napisz zapytania SQL:
+nasa_dataset - nazwa bazy danych 
+    1. które będzie zwracało średnią masę meteorów w każdej z klas.
+    select recclass, avg(mass) from nasa_dataset group by recclass
+    2. które będzie zwracało klasy meteorów których średnia waga jest mniejsza niż 5000.
+    select recclass from nasa_dataset group by recclass having avg(mass)<5000
